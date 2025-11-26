@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChuckNorrisApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryContainer">@color/blue_secondary</item>
+        <item name="colorPrimaryVariant">@color/blue_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondaryContainer">@color/yellow_primary</item>
+        <item name="colorSecondaryVariant">@color/yellow_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <style name="Theme.ChuckNorrisApp" parent="Base.Theme.ChuckNorrisApp"/>
+    <style name="Theme.ChuckNorrisApp.AppbarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.ChuckNorrisApp.Popup" parent="Theme.AppCompat.Light"/>
+    <style name="Theme.ChuckNorrisApp.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="titleTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/yellow_tertiary</item>
+    </style>
+    
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/blue_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/chuck</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="postSplashScreenTheme">@style/Theme.ChuckNorrisApp</item>
+    </style>
+
+</resources>
